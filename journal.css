@@ -1,0 +1,121 @@
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  background-image: url(http://www.leblogdukitsch.com/wp-content/uploads/2014/01/Gifs-henrique-lima_08.gif);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poiret One', Arial, serif;
+  color: #5C1592;
+}
+
+header {
+  background-image: url(http://www.leblogdukitsch.com/wp-content/uploads/2014/01/Gifs-henrique-lima_08.gif);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+article {
+  background-color: rgba(255, 255, 255, 0.7);
+  height: 100%;
+}
+
+.contenu {
+  margin: 10% 20%;
+  padding-top: 2%;
+}
+
+.contenu div {
+  padding-bottom: 1%;
+}
+
+#accueil .contenu div:hover {
+  background-color: rgba(204, 136, 255, 0.5);
+  font-weight: bold;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-weight: lighter;
+  font-size: 3em;
+  padding: 0 3%;
+}
+
+h2 {
+  padding-top: 3%;
+}
+
+h3 {
+  background-color: #00FFCC;
+  color: #FF00AA;
+}
+
+footer {
+  background-image: url(http://www.leblogdukitsch.com/wp-content/uploads/2014/01/Gifs-henrique-lima_08.gif);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+footer p {
+  text-align: right;
+  padding: 0 3%;
+  font-weight: bold;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+ float: left;
+ position: fixed;
+ font-weight: bold;
+ font-family: inherit;
+ font-size: 1.2em;
+ color: #FF00AA;
+}
+
+.cleaner {
+  clear: left;
+}
+
+#ornitho {
+  float: left;
+  display: inline-block;
+  margin-right: 3%;
+}
+
+.contenuArticle {
+  margin: 10% 20%;
+  padding-top: 2%;
+}
+
+#paillettes {
+  width: 50%;
+  float: right;
+  display: inline-block;
+  margin-left: 3%;
+}

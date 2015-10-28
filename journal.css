@@ -24,7 +24,7 @@ header, footer {
   right: 0;
 }
 
-header, footer, #accueil .contenu div:hover {
+header, footer {
   color: white;
 }
 
@@ -50,9 +50,10 @@ article {
   padding: 2%;
 }
 
-#accueil .contenu div:hover {
+#accueil .contenu div:hover, fieldset button:hover {
   background-color: rgba(204, 136, 255, 0.5);
   font-weight: bold;
+  color: white;
 }
 
 a {
@@ -70,7 +71,7 @@ h2 {
   padding: 3%;
 }
 
-h3 {
+h3, fieldset button {
   background-color: #00FFCC;
   color: #FF00AA;
 }
@@ -85,7 +86,7 @@ footer p {
   font-weight: bold;
 }
 
-button {
+.retour {
   background-color: transparent;
   border: none;
   position: fixed;
@@ -132,4 +133,34 @@ td {
 td img {
   height: 200px;
   width: 200px;
+}
+
+form {
+  position: fixed;
+  margin-top: 9%;
+  margin-left: 1%;
+  font-family: inherit;
+  font-size: 1.2em;
+  color: #FF00AA;
+  width: 15%;
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 1.2em;
+  color:#00FFCC;
+  padding-bottom: 2%;
+}
+
+fieldset button {
+  border: none;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 1em;
+  margin: 5% 0;
+  padding: 1%;
 }

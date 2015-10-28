@@ -50,9 +50,66 @@
       <h1>Le Journal du bizarre.</h1>
     </header>
 
+    <form id  ="loginMdp" method="get">
+      <fieldset>
+        <legend>Connexion</legend>
+        <div>
+          <label for="fldusername">Nom d'utilisateur</label>
+          <input id="fldusername" name="username" type="text"/>
+        </div>
+        <div>
+          <label for="fldmdp">Mot de passe</label>
+          <input id="fldmdp" name="mdp" type="password"/>
+        </div>
+        <button onclick="afficheReponse()" type="button">Valider</button>
+      </fieldset>
+    </form>
+
     <footer role="contentinfo">
      <p>Mercredi 28 Octobre</p>
     </footer>
+
+    <script type="text/javascript">
+
+    var tableauUser = [];
+    var tableauMdp = [];
+
+    function afficheReponse() {
+
+      var f = document.getElementById("loginMdp")
+      var userName = f.username.value;
+      var motDePasse = f.mdp.value;
+
+      var verifUsername = tableauUser.indexOf(userName);
+      var verifMdp = tableauMdp.indexOf(motDePasse)
+
+      if (verifUsername === -1) {
+          var register = prompt("Identifiant inconnu. S'enregistrer ? (Y/n)");
+          if(register === "n") {
+            alert("Tant pis, bonne visite.")
+          }
+          else if (register === "Y") {
+            tableauUser.push(userName);
+            tableauMdp.push(motDePasse);
+            alert("Vous êtes connecté-e, " + userName + ".");
+          }
+          else {
+            alert("Erreur.")
+          }
+      }
+
+      else {
+        if (verifUsername === verifMdp) {
+          alert("Vous êtes connecté-e, " + userName + ".");
+        }
+        else {
+          alert("Mot de passe incorrect.")
+        }
+      }
+
+    }
+
+    </script>
 
   </body>
 
